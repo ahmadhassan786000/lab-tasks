@@ -3,110 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahamd Hassan</title>
+    <title>Student Gradesheet</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<table>
-    <caption>student grade information</caption>
-<tr>
-<th>id</th>
-<th>name</th>
-<th>age</th>
-<th>gender</th>
-<th>semester</th>
-</tr>
-<tr>
-    <td>1</td>
-    <td>a</td>
-    <td>20</td>
-    <td>m</td>
-    <td>4</td>
-</tr>
-<tr>
-    <td>2</td>
-    <td>b</td>
-    <td>20</td>
-    <td>m</td>
-    <td>3</td>
-</tr>
-<tr>
-    <td>3</td>
-    <td>c</td>
-    <td>20</td>
-    <td>f</td>
-    <td>4</td>
-</tr>
-<tr>
-    <td>4</td>
-    <td>d</td>
-    <td>20</td>
-    <td>m</td>
-    <td>1</td>
-</tr>
-<tr>
-    <td>5</td>
-    <td>e</td>
-    <td>20</td>
-    <td>m</td>
-    <td>7</td>
-</tr>
-<tr>
-    <td>6</td>
-    <td>f</td>
-    <td>20</td>
-    <td>f</td>
-    <td>2</td>
-</tr>
-<tr>
-    <td>7</td>
-    <td>g</td>
-    <td>20</td>
-    <td>m</td>
-    <td>4</td>
-</tr>
-<tr>
-    <td>8</td>
-    <td>h</td>
-    <td>20</td>
-    <td>f</td>
-    <td>5</td>
-</tr>
-<tr>
-    <td>9</td>
-    <td>i</td>
-    <td>20</td>
-    <td>m</td>
-    <td>4</td>
-</tr>
-<tr>
-    <td>10</td>
-    <td>j</td>
-    <td>20</td>
-    <td>m</td>
-    <td>4</td>
-</tr>
-</table>
-<form action="/search" method="get">
-    <fieldset>
-        <h2>registeration form</h2>
-        <label for="id">id:</label>
-        <input type="text" name="id" id="id" placeholder="registeration number">
-        <label for="username">name:</label>
-        <input type="text" id="username" name="name" placeholder="username">
-        <label for="age" >age:</label>
-        <input type="number" min="18" id="age" placeholder="date of birth">
-        <div style="flex-direction: row;">
-            <label>gender:</label>
-            <input type="radio" id="male" name="passed">
-            <label style="flex-direction: row;" for="male">male</label>
-            <input type="radio" id="female" name="passed">
-            <label for="female">female</label>
-        </div>
-        <label for="semester">semester:</label>
-        <input type="number" id="semester" min="1" max="8" placeholder="semester">
-        <button>submit</button>
-    </fieldset>
-</form>
+    <header>
+        <h1>Student Grades Management</h1>
+    </header>
+
+    <main>
+        <section>
+            <table>
+                <caption>Student Grade Information</caption>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Semester</th>
+                        <th>GPA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Ali</td><td>20</td><td>M</td><td>4</td><td>3.2</td></tr>
+                    <tr><td>2</td><td>Sara</td><td>21</td><td>F</td><td>3</td><td>3.8</td></tr>
+                    <tr><td>3</td><td>John</td><td>22</td><td>M</td><td>2</td><td>2.9</td></tr>
+                    <tr><td>4</td><td>Emma</td><td>19</td><td>F</td><td>1</td><td>3.6</td></tr>
+                    <tr><td>5</td><td>Michael</td><td>20</td><td>M</td><td>7</td><td>3.1</td></tr>
+                    <tr><td>6</td><td>Fatima</td><td>21</td><td>F</td><td>6</td><td>3.9</td></tr>
+                    <tr><td>7</td><td>Ahmed</td><td>23</td><td>M</td><td>5</td><td>2.5</td></tr>
+                    <tr><td>8</td><td>Jessica</td><td>20</td><td>F</td><td>4</td><td>3.3</td></tr>
+                    <tr><td>9</td><td>David</td><td>22</td><td>M</td><td>8</td><td>2.8</td></tr>
+                    <tr><td>10</td><td>Emily</td><td>19</td><td>F</td><td>2</td><td>3.7</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <form action="/register" method="post">
+                <fieldset>
+                    <h2>Student Registration</h2>
+                    <label for="id">Student ID:</label>
+                    <input type="number" id="id" name="id" placeholder="slect id" required>
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="username">
+                    
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="18" placeholder="slect birth" required>
+                    
+                    <label>Gender:</label>
+                    <div style="flex-direction: row;">
+                        <input type="radio" id="male" name="gender" value="M" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="F" required>
+                    <label for="female">Female</label>
+                    </div>
+                    
+                    <label for="semester">Semester:</label>
+                    <input type="number" id="semester" name="semester" min="1" max="8" placeholder="current semester" required>
+                    
+                    <label for="gpa">GPA:</label>
+                    <input type="number" id="gpa" name="gpa" min="0" max="4" step="0.1" placeholder="average gpa" required>
+                    
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <section id="report">
+        <h2>Report</h2>
+        <p>This webpage contains a student gradesheet and a registration form. The table displays sample student data with multiple attributes like ID, Name, Age, Gender, Semester, and GPA. The form allows users to add a new student record, ensuring usability with validation.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ahmad Hassan. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
