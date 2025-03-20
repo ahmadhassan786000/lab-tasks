@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahamd Hassan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<table>
+    <caption>student grade information</caption>
+<tr>
+<th>id</th>
+<th>name</th>
+<th>age</th>
+<th>gender</th>
+<th>semester</th>
+</tr>
+<tr>
+    <td>1</td>
+    <td>a</td>
+    <td>20</td>
+    <td>m</td>
+    <td>4</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>b</td>
+    <td>20</td>
+    <td>m</td>
+    <td>3</td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>c</td>
+    <td>20</td>
+    <td>f</td>
+    <td>4</td>
+</tr>
+<tr>
+    <td>4</td>
+    <td>d</td>
+    <td>20</td>
+    <td>m</td>
+    <td>1</td>
+</tr>
+<tr>
+    <td>5</td>
+    <td>e</td>
+    <td>20</td>
+    <td>m</td>
+    <td>7</td>
+</tr>
+<tr>
+    <td>6</td>
+    <td>f</td>
+    <td>20</td>
+    <td>f</td>
+    <td>2</td>
+</tr>
+<tr>
+    <td>7</td>
+    <td>g</td>
+    <td>20</td>
+    <td>m</td>
+    <td>4</td>
+</tr>
+<tr>
+    <td>8</td>
+    <td>h</td>
+    <td>20</td>
+    <td>f</td>
+    <td>5</td>
+</tr>
+<tr>
+    <td>9</td>
+    <td>i</td>
+    <td>20</td>
+    <td>m</td>
+    <td>4</td>
+</tr>
+<tr>
+    <td>10</td>
+    <td>j</td>
+    <td>20</td>
+    <td>m</td>
+    <td>4</td>
+</tr>
+</table>
+<form action="/search" method="get">
+    <fieldset>
+        <h2>registeration form</h2>
+        <label for="id">id:</label>
+        <input type="text" name="id" id="id" placeholder="registeration number">
+        <label for="username">name:</label>
+        <input type="text" id="username" name="name" placeholder="username">
+        <label for="age" >age:</label>
+        <input type="number" min="18" id="age" placeholder="date of birth">
+        <div style="flex-direction: row;">
+            <label>gender:</label>
+            <input type="radio" id="male" name="passed">
+            <label style="flex-direction: row;" for="male">male</label>
+            <input type="radio" id="female" name="passed">
+            <label for="female">female</label>
+        </div>
+        <label for="semester">semester:</label>
+        <input type="number" id="semester" min="1" max="8" placeholder="semester">
+        <button>submit</button>
+    </fieldset>
+</form>
+</body>
+</html>
