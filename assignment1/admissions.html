@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Academics</title>
+  <title>Admission</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <!-- navbar -->
+<body class="bg-gray-50 text-gray-900">
+  <!-- Navbar -->
   <header class="sticky top-0 z-30 font-bold bg-[url('img/background_image.avif')] bg-cover shadow-md">
     <ul class="flex gap-6 justify-center items-center py-4 bg-opacity-90 backdrop-blur-sm">
       <a class="w-12 h-12" href="#"><img src="./img/qau_logo.png" alt="qau_logo" class="object-contain"></a>
@@ -30,71 +30,82 @@
     <p class="text-lg">Quaid-i-Azam University, Islamabad</p>
   </section>
 
-  <!-- Main Section: Grid with 4 equal columns -->
+  <!-- Main Section -->
   <main class="p-6 max-w-7xl mx-auto">
-    <h2 class="text-2xl font-semibold mb-4 text-center">academics</h2>
+    <h2 class="text-2xl font-semibold mb-4 text-center">Admission</h2>
 
-    <p class="text-center mb-8 text-gray-700">The department offers PhD, MPhil, MS (Information Science & Technology),
-      M.Sc. and BS degrees. Each degree programme has a specific objective and focus. The course of study and syllabi
-      for each degree is updated and is inline its objectives.</p>
+    <p class="text-center mb-8 text-gray-700">Admission in the department for various degree programmes are offered in
+      Spring and Fall semesters.</p>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- research Cards -->
+      <!-- Project Cards -->
       <div class="bg-white shadow-md rounded-lg p-4 border">
         <ul class="space-y-1 text-sm">
-          <a href="phd_cs.html"><img src="img/phd.png" alt="hci_image" class="h-40 w-[400px] bg-cover"></a>
-          <li>PhD is highest degree awarded in an academic discipline and is the most satisfying and rewarding
-            educational experience. Students work closely with a faculty member, performing original research, and
-            tackling challenging and unsolved problems.</li>
+          <li><strong><a href="phd_cs.html">phD (computer science)</a></strong></li>
+          <li>Every Semester</li>
+          <li><strong>Admission requirements</strong></li>
+          <li class="list-disc ml-5">MPhil (Computer Science or computing related discipline) <strong
+              class=lowercase>or</strong></li>
+          <li class="list-disc ml-5">MS (18 years Education) with Computer Science or computing related discipline</li>
+          <li class="list-disc ml-5">Must pass the test and interview arranged by the department</li>
           <li><strong><a href="phd_cs.html"> more details about program</a></strong></li>
-
         </ul>
       </div>
       <div class="bg-white shadow-md rounded-lg p-4 border">
         <ul class="space-y-1 text-sm">
-          <a href="ms_it.html"></a><img src="img/ms.png" alt="hci_image" class="h-40 w-[400px] bg-cover"></a>
-          <li>The MS programme intends to bring together Computer Science and collaborative environment of how people
-            and society interact with digital information MS (Information Science & Technology) Part Time (with 6 credit
-            hours per semester) M.Sc.(Computer Science, Software Engineering, Information Technology) or 4 years BS
-            (Computer Science, Software Engineering, Information Technology) with experience in digital information
-            management.</li>
-          <li><strong><a href="ms_it.html"> more details about program</a></strong></li>
-
-        </ul>
-      </div>
-      <div class="bg-white shadow-md rounded-lg p-4 border">
-        <ul class="space-y-1 text-sm">
-          <a href="mphil_cs.html"><img src="img/mphil.png" alt="hci_image" class="h-40 w-[400px] bg-cover"></a>
-          <li>The objective of M.Phil Computer Science programme is to train students to initiate research work. The
-            duration of M.Phil programme is two years (4 semesters).MPhil is of 50 credit hours, 24 credit hours for the
-            course work and 26 credit hours for research work. Each course is of 3 credit hours</li>
+          <li><strong><a href="mphil_cs.html"> mPhil (computer science)</a></strong></li>
+          <li>fall Semester</li>
+          <li><strong>Admission requirements</strong></li>
+          <li class="list-disc ml-5">M.Sc.(Computer Science, Software Engineering, Information Technology) <strong
+              class=lowercase>or</strong></li>
+          <li class="list-disc ml-5">4 years BS (Computer Science, Software Engineering, Information Technology)</li>
+          <li class="list-disc ml-5">Must pass test (sample test available) and interview arranged by the department
+          </li>
+          <li><strong><a href="img/mphil-test.pdf" target="_blank ">sample test</a></strong></li>
           <li><strong><a href="mphil_cs.html"> more details about program</a></strong></li>
-
         </ul>
       </div>
       <div class="bg-white shadow-md rounded-lg p-4 border">
         <ul class="space-y-1 text-sm">
-          <a href="ms_ds.html"><img src="img/ms-ds.png" alt="hci_image" class="h-40 w-[400px] bg-cover"></a>
-          <li>Data Science has become an important due to the need for analyzing and understanding ever increasing data
-            generated by a multitude of sources. By getting admission in the MS programme applicants will not only
-            improve their qualifications but will also be equipped with the latest knowledge in the field.</li>
+          <li><strong><a href="ms_it.html">ms (inforation science & Technology)</a></strong></li>
+          <li>every Semester</li>
+          <li><strong>Admission requirements</strong></li>
+          <li class="list-disc ml-5">Students must have completed 16 years of education, either BS (4 years) or MSc in
+            computing related disciplines with experience in digital information management</li>
+          <li class="list-disc ml-5">Must pass test and interview arranged by the department</li>
+          <li><strong><a href="img/msi_test.pdf" target="_blank"> sample test</a></strong></li>
+          <li><strong><a href="ms_it.html"> more details about program</a></strong></li>
+        </ul>
+      </div>
+      <div class="bg-white shadow-md rounded-lg p-4 border col-span-2">
+        <ul class="space-y-1 text-sm">
+          <li><strong><a href="ms_ds.html">ms (data science)</a></strong></li>
+          <li>every Semester</li>
+          <li><strong>Admission requirements</strong></li>
+          <li class="list-disc ml-5">BS or MSc (16 years of education) in computing related disciplines <strong
+              class="lowercase">or</strong></li>
+          <li class="list-disc ml-5">BS or MSc (16 years of education) in non-computing disciplines having studied at
+            least two mathematics related courses and one statistics related course in their terminal degree. Such
+            students must pass non-credit deficiency courses of “Problem Solving and programming”, “Data Structures”,
+            and “Database Systems”. These courses may be exempted, if the applicant has already studied them in his or
+            her terminal degree.</li>
+          <li class="list-disc ml-5">Must pass test and interview arranged by the department</li>
+          <li><strong><a href="img/msd_test.pdf" target="_blank"> sample test</a></strong></li>
           <li><strong><a href="ms_ds.html"> more details about program</a></strong></li>
-
         </ul>
       </div>
       <div class="bg-white shadow-md rounded-lg p-4 border">
         <ul class="space-y-1 text-sm">
-          <a href="bs_cs.html"><img src="img/bs.png" alt="hci_image" class="h-40 w-[400px] bg-cover"></a>
-          <li>The BS Computer Science program at QAU provides a well-integrated balance of theoretical and practical
-            knowledge required for developing reliable and usable software tools for different fields. The program
-            enables students to design, implement and manage systems combining scientific, computational, communication
-            and multimedia facilities in different domains.</li>
+          <li><strong><a href="bs_cs.html">bs (computer science)</a></strong></li>
+          <li>fall Semester</li>
+          <li><strong>Admission requirements</strong></li>
+          <li class="list-disc ml-5">Intermediate with Mathematics<strong class="lowercase"> or</strong></li>
+          <li class="list-disc ml-5">FSc pre-medical with Additional Mathematics<strong class="lowercase"> or</strong>
+          </li>
+          <li class="list-disc ml-5">Equivalent Certificate of 12 years education with Mathematics.</li>
           <li><strong><a href="bs_cs.html"> more details about program</a></strong></li>
-
         </ul>
       </div>
-
-
 
     </div>
 
@@ -139,7 +150,6 @@
   <footer class="text-center bg-blue-500 p-5">
     <p class="font-bold">2025 © Department of Computer Sciences, QAU, Islamabad</p>
   </footer>
-
 </body>
 
 </html>

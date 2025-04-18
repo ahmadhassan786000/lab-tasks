@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Research</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
@@ -19,8 +20,7 @@
       <li><a href="funded_projects.html">Funded Projects</a></li>
       <li><a href="admissions.html">Admissions</a></li>
       <li><a href="faculty.html">Faculty</a></li>
-      <li><a href="faculty.html">Jobs</a></li>
-      <li><a href="contact us.html">Contact Us</a></li>
+      <li><a href="contact_us.html">Contact Us</a></li>
     </ul>
   </header>
 
@@ -31,63 +31,81 @@
   </section>
 
   <!-- Main Section: Grid with 4 equal columns -->
-  <main class="grid grid-cols-4 gap-4 p-4">
-      <div class="col-span-3">
-        <h2 class="text-2xl font-semibold mb-4 text-center">research</h2>
-        <div class="flex gap-3 h-fit mt-4 ">
-            <!-- Research Card 1 -->
-            <div class="flex flex-col w-80 bg-yellow-100 p-3 rounded transition transform duration-300 hover:scale-105">
-                <img src="img/hci.jpg" alt="hci_image" class="h-40">
-                <h3 class="text-xl text-center">Human Computer Interaction</h3>
-                <hr class="my-2">
-                <p class="font-normal text-sm">Investigates all aspects of information usage by humans. Research focus varies for information seeking behavior, Information Interaction Techniques, Storage and Retrieval models/frameworks for structured and unstructured information, and information services for human information needs.</p>
-            </div>
-            
-            <!-- Research Card 2 -->
-            <div class="flex flex-col w-80 bg-yellow-100 p-3 rounded transition transform duration-300 hover:scale-105">
-                <img src="img/knowlegeEng.jpg" alt="knowledge_engenering_image" class="h-40">
-                <h3 class="text-xl text-center">Knowledge Software Engineering</h3>
-                <hr class="my-2">
-                <p class="font-normal text-sm">Focuses on analyze of data, metadata and knowledge using supervised and unsupervised mining algorithms. The target areas will be software architecture, web services and overlay networks. The main goal is to process related and uncorrelated facts and extract meaningful contextual knowledge for quality decision making.</p>
-            </div>
-            
-            <!-- Research Card 3 -->
-            <div class="flex flex-col w-80 bg-yellow-100 p-3 rounded  transition transform  duration-300 hover:scale-105">
-                <img src="img/NetworkCom.jpg" alt="network_communication_image" class="h-40">
-                <h3 class="text-xl text-center">Networking and Communication</h3>
-                <hr class="my-2">
-                <p class="font-normal text-sm">This group investigates the applied aspects in the domains of networking, communication, security and privacy. The research group focuses on a number of areas including but not limited to computer networks, distributed systems,  formal modeling and analysis, statistical modeling, social network analysis, and structural and behavior modeling and analysis of distributed protocols and systems.</p>
-            </div>
-        </div>
+  <main class="p-6 max-w-7xl mx-auto">
+    <h2 class="text-2xl font-semibold mb-4 text-center">research</h2>
+
+    <p class="text-center mb-8 text-gray-700">Research in the department is carried out in research areas of faculty's
+      interest through research groups.</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- research Cards -->
+      <div class="bg-white shadow-md rounded-lg p-4 border">
+        <ul class="space-y-1 text-sm">
+          <img src="img/hci.jpg" alt="hci_image" class="h-40 w-[400px] bg-cover">
+          <li><strong>Human Computer Interaction</strong></li>
+          <li>Research in the department is carried out in research areas of faculty's interest through research groups.
+          </li>
+        </ul>
+      </div>
+      <div class="bg-white shadow-md rounded-lg p-4 border">
+        <ul class="space-y-1 text-sm">
+          <img src="img/knowlegeEng.jpg" alt="hci_image" class="h-40 w-[400px] bg-cover">
+          <li><strong>Knowledge Software Engineering</strong></li>
+          <li>Focuses on analyze of data, metadata and knowledge using supervised and unsupervised mining algorithms.
+            The target areas will be software architecture, web services and overlay networks. The main goal is to
+            process related and uncorrelated facts and extract meaningful contextual knowledge for quality decision
+            making.</li>
+        </ul>
+      </div>
+      <div class="bg-white shadow-md rounded-lg p-4 border">
+        <ul class="space-y-1 text-sm">
+          <img src="img/NetworkCom.jpg" alt="hci_image" class="h-40 w-[400px] bg-cover">
+          <li><strong>Networking and Communication</strong></li>
+          <li>This group investigates the applied aspects in the domains of networking, communication, security and
+            privacy. The research group focuses on a number of areas including but not limited to computer networks,
+            distributed systems, formal modeling and analysis, statistical modeling, social network analysis, and
+            structural and behavior modeling and analysis of distributed protocols and systems.</li>
+        </ul>
+      </div>
+
+
+
     </div>
-    <!-- Column 4: Sticky Sidebar -->
-    <aside class="sticky top-20 h-fit self-start bg-blue-300 p-4 rounded">
-        <h2 class="text-2xl font-bold text-center px-6 py-2 bg-[url(img/background_image.avif)] text-white">Documents</h2>
-        <ul class="flex flex-col gap-1 ">
-        <li><a href="img/time_table.pdf" target="_blank">Time Table</a></li>
-        <li><a href="img/semester-schedule.pdf" target="_blank">Semester Schedule</a></li>
-        <li><a href="img/university-facilities.pdf" target="_blank">University Facilities</a></li>
+    <div
+      class="bg-white shadow-md rounded-lg p-4 mt-5 border flex justify-evenly bg-[url(img/background_links.jpg)] bg-cover text-white">
+      <ul class="space-y-1 text-sm ">
+        <li class="mb-4 text-center"><strong>programs</strong></li>
+        <li><a href="phd_cs.html">PhD (Computer Science)</a></li>
+        <li><a href="ms_it.html">MS (Information Technology)</a></li>
+        <li><a href="mphil_cs.html">MPhil (Computer Science)</a></li>
+        <li><a href="ms_ds.html">MS (Data Science)</a></li>
+        <li><a href="bs_cs.html">BS (Computer Science)</a></li>
       </ul>
-
-      <h2 class="text-2xl font-bold text-center px-6 py-2 bg-[url(img/background_image.avif)] text-white">programs</h2>
-      <ul class="flex flex-col gap-1">
-        <li><a href="#">PhD (Computer Science)</a></li>
-        <li><a href="#">MS (Information Technology)</a></li>
-        <li><a href="#">MPhil (Computer Science)</a></li>
-        <li><a href="#">MS (Data Science)</a></li>
-        <li><a href="#">BS (Computer Science)</a></li>
+      <ul class="space-y-1 text-sm">
+        <li class="mb-4 text-center"><strong>help</strong></li>
+        <li><a href="#">Quaid-i-Azam University,<br>
+            Islamabad, 45320, Pakistan</a></li>
+        <li class="flex"><img class="w-5 mr-1 bg-white" src="img/mail_logo.svg" alt="mail_logo"><a class="lowercase"
+            href="mailto:cs@qau.edu.pk">cs@qau.edu.pk</a></li>
+        <li class="flex"><img class="w-5 mr-1 bg-white" src="img/telephone_logo.svg" alt="telephone_logo"><a
+            href="tel: +92 (051) 9064-2057">+92 (051) 9064 2057</a></li>
       </ul>
-
-      <h2 class="text-2xl font-bold text-center px-6 py-2 bg-[url(img/background_image.avif)] text-white">help</h2>
-      <ul class="flex flex-col gap-1">
-        <li><a href="#">email: cs@qau.edu.pk</a></li>
-        <li><a href="#">phone: +92 (051) 9064-2057</a></li>
-        <li><a href="#">Quaid-i-Azam University,
-          Islamabad, 45320, Pakistan</a></li>
+      <ul>
+        <li class="mb-4 font-bold">Resources</li>
+        <li class="flex justify-center items-start"><img class="w-5 mr-1" src="img/whatsapp_logo.svg"
+            alt="whatsapp_logo"><a href="https://whatsapp.com/channel/0029ValNFBwChq6Gml7mDL3B"
+            target="_blank">WhatsApp</a></li>
+        <li class="flex justify-center items-center"><img class="w-5 mr-1" src="img/instagram_logo.svg"
+            alt="instagram_logo"><a
+            href="https://www.instagram.com/qauislamabadpk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank">Instagram</a></li>
+        <li class="flex justify-center items-center"><img class="w-5 mr-1" src="img/facebook_logo.svg"
+            alt="facebook_logo"><a href="https://www.facebook.com/qau.edu.pk?mibextid=rS40aB7S9Ucbxw6v"
+            target="_blank">Facebook</a></li>
+        <li class="flex justify-center items-center"><img class="w-5 mr-1" src="img/youtube_logo.svg"
+            alt="youtube_logo"><a href="https://www.youtube.com/@QAU_Islamabad" target="_blank">YouTube</a></li>
       </ul>
-      
-    </aside>
-
+    </div>
   </main>
 
   <!-- Footer -->
@@ -96,4 +114,5 @@
   </footer>
 
 </body>
+
 </html>
