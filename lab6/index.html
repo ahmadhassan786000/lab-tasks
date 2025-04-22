@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmad Hassan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="min-h-screen font-serif bg-cover text-white text-lg capitalize overflow-x-hidden" style="background-image: url('./background.jfif');">
+    
+    <!-- Navbar1 -->
+    <header class="bg-teal-700 flex flex-col md:flex-row md:justify-between md:items-center gap-4 p-4">
+      <!-- Left: Emojis -->
+      <div class="flex gap-2 justify-center md:justify-start">
+        <img src="./logo.jfif" alt="emoji" class="w-10 h-10 rounded-full" />
+        <img src="./logo.jfif" alt="emoji" class="w-10 h-10 rounded-full" />
+        <img src="./logo.jfif" alt="emoji" class="w-10 h-10 rounded-full" />
+      </div>
+
+      <!-- Middle: Logo & Heading -->
+      <div class="flex justify-center items-center gap-2">
+        <img src="./travelling_logo.jfif" alt="logo" class="w-12 h-12 rounded-full transition-transform hover:scale-125" />
+        <h1 class="text-2xl text-center">travelling</h1>
+      </div>
+
+      <!-- Right: Search -->
+      <div class="flex justify-center md:justify-end">
+        <input type="search" placeholder="search..." class="p-1 text-black rounded w-full max-w-xs" />
+      </div>
+    </header>
+
+    <!-- Navbar2 -->
+    <nav class="bg-gray-500 h-12 flex justify-center items-center">
+      <ul class="flex md:gap-8 flex-wrap justify-center">
+        <li class="hover:bg-black px-3 py-1 cursor-pointer">home</li>
+        <li class="hover:bg-black px-3 py-1 cursor-pointer">about</li>
+        <li class="hover:bg-black px-3 py-1 cursor-pointer">service</li>
+        <li class="hover:bg-black px-3 py-1 cursor-pointer">contact</li>
+      </ul>
+    </nav>
+
+    <!-- Main Grid -->
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-3 p-4 w-full">
+      
+      <!-- Category -->
+      <section class="bg-teal-700 p-4 text-center">
+        <h1 class="text-2xl mb-4">category</h1>
+        <ul class="space-y-4">
+          <li><a href="#likes" class="text-white hover:underline">likes</a></li>
+          <li><a href="#visited" class="text-white hover:underline">visited</a></li>
+          <li><a href="#dislikes" class="text-white hover:underline">dislikes</a></li>
+          <li><a href="#unvisited" class="text-white hover:underline">unvisited</a></li>
+        </ul>
+      </section>
+
+      <!-- Paragraph -->
+      <section class="bg-gray-700 p-4 space-y-8 overflow-y-auto max-h-[500px] w-full">
+        
+        <!-- Likes -->
+        <div id="likes">
+          <h1 class="text-xl text-center bg-gray-500 p-2">likes</h1>
+          <div class="flex flex-col lg:flex-row gap-4 items-center w-full">
+            <img src="./faisal-mosque.jpg" alt="faisal-mosque" class="w-full lg:w-72 rounded-lg object-cover" />
+            <p class="text-justify leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequuntur ex...</p>
+          </div>
+        </div>
+
+        <!-- Visited -->
+        <div id="visited">
+          <h1 class="text-xl text-center bg-gray-500 p-2">visited</h1>
+          <div class="flex flex-col lg:flex-row gap-4 items-center w-full">
+            <img src="./faisal-mosque.jpg" alt="faisal-mosque" class="w-full lg:w-72 rounded-lg object-cover" />
+            <p class="text-justify leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nesciunt dolores...</p>
+          </div>
+        </div>
+
+        <!-- Dislikes -->
+        <div id="dislikes">
+          <h1 class="text-xl text-center bg-gray-500 p-2">dislikes</h1>
+          <div class="flex flex-col lg:flex-row gap-4 items-center w-full">
+            <img src="./horrible-house.jfif" alt="horrible-house" class="w-full lg:w-72 rounded-lg object-cover" />
+            <p class="text-justify leading-relaxed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus totam repellat...</p>
+          </div>
+        </div>
+
+        <!-- Unvisited -->
+        <div id="unvisited">
+          <h1 class="text-xl text-center bg-gray-500 p-2">unvisited</h1>
+          <div class="flex flex-col lg:flex-row gap-4 items-center w-full">
+            <img src="./badshahi-mosque.jfif" alt="badshahi-mosque" class="w-full lg:w-72 rounded-lg object-cover" />
+            <p class="text-justify leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quos tenetur...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card -->
+      <section class="bg-center bg-cover flex flex-col items-center p-4 text-center text-xl" style="background-image: url('./card_background.webp');">
+        <img src="./mypic.jpeg" alt="mypic" class="w-36 h-36 rounded-full mb-4" />
+        <ul class="space-y-2">
+          <li>Ahmad Hassan</li>
+          <li>cs student</li>
+          <li>QAU</li>
+          <hr />
+          <li>5k followers</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-teal-900 text-center py-3">
+      <p>© 2025 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
